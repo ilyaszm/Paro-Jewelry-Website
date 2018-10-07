@@ -1,11 +1,56 @@
-* {box-sizing: border-box}
 
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/****** #highlights ******/
+/****** HEADER ******/
+header {
+    background-color: #F7EBEC;
+    width: 100%;
+}
+
+.header-container {
+    height: 20vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.header-container h1 a {
+    font-family: 'Charmonman', cursive;
+    font-size: 50px;
+    color: #1D1E2C;
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 30px 30px;
+}
+
+nav ul li a {
+    font-family: 'K2D', sans-serif;
+    font-size: 18px;
+    color: #1D1E2C;
+    text-decoration: none;
+}
+
+/****** SHOWCASE ******/
+.showcase-container {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+/****** HIGHLIGHTS ******/
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
 .mySlides {
     display: none;
 }
@@ -106,16 +151,50 @@ img {
     .prev, .next,.text {font-size: 11px}
 }
 
-.wrapper {
+/****** STORY ******/
+.story-container {
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
-@media only screen and (max-width: 600px) {
-    .wrapper {
-        display: grid;
-        grid-template-columns: 100%;
-    }
+/****** FOOTER ******/
+.footer-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 
-/******  ******/
+
+
+/****** MEDIA QUERIES ******/
+
+/* Extra small devices (portrait tablets, large phones and phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    body {
+        text-align: center;
+    }
+
+    .header-container,
+    .showcase-container,
+    .wrapper,
+    .story-container,
+    .store-container,
+    .footer-container {
+        grid-template-columns: 100%;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+/*@media only screen and (max-width: 768px) {
+
+
+
+}*/
+
+/* Large devices (laptops/desktops, 992px and down) */
+/*@media only screen and (max-width: 992px) {
+
+
+
+}*/
