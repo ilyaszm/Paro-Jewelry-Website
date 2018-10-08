@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charmonman|K2D|Krub|Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charmonman|K2D|Krub|Roboto|Dosis">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <title>Welcome To Paro Jewelry</title>
@@ -43,11 +43,11 @@
 
     <section id="highlights">
         <div class="slideshow-container">
-
+            <h1 id="highlight-title">Highlights of the month</h1>
             <div class="mySlides fade">
                 <div class="wrapper">
                     <div>
-                        <a data-lightbox="gallery"><img id="slide1" src="images/slide1.jpeg" alt="Gold Necklace"style="width:100%"></a>
+                        <img id="slide1" src="images/slide1.jpeg" style="width:100%">
                         <div id="modal-1" class="modal">
                             <span class="close">x</span>
                             <img id="img-1" class="modal-content">
@@ -75,7 +75,7 @@
             <div class="mySlides fade">
                 <div class="wrapper">
                     <div>
-                        <a data-lightbox="gallery"><img id="slide2" src="images/slide2.jpeg" style="width:100%"></a>
+                        <img id="slide2" src="images/slide2.jpeg" style="width:100%">
                         <div id="modal-2" class="modal">
                             <span class="close-2">x</span>
                             <img id="img-2" class="modal-content">
@@ -101,7 +101,7 @@
             <div class="mySlides fade">
                 <div class="wrapper">
                     <div>
-                        <a data-lightbox="gallery"><img id="slide3" src="images/slide3.jpg" style="width:100%"></a>
+                        <img id="slide3" src="images/slide3.jpg" style="width:100%">
                         <div id="modal-3" class="modal">
                             <span class="close-3">x</span>
                             <img id="img-3" class="modal-content">
@@ -127,7 +127,7 @@
             <div class="mySlides fade">
                 <div class="wrapper">
                     <div>
-                        <a data-lightbox="gallery"><img id="slide4" src="images/slide4.jpg" style="width:100%"></a>
+                        <img id="slide4" src="images/slide4.jpg" style="width:100%">
                         <div id="modal-4" class="modal">
                             <span class="close-4">x</span>
                             <img id="img-4" class="modal-content">
@@ -167,6 +167,7 @@
         <div class="story-container">
             <div>
                 <h1>Bright & Beautiful</h1>
+                <hr>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repellendus animi delectus perferendis et, reprehenderit iure molestiae ea adipisci recusandae.</p>
                 <a href="about.html"><button>Read our story</button></a>
             </div>
@@ -180,13 +181,13 @@
         <div class="store-container">
             <div><h1>Find The Nearest Store</h1></div>
             <hr>
-            <div><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos laborum a amet.</p></div>
+            <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia provident minus nobis facere totam necessitatibus.</p></div>
             <div>
-                <form action="">
-                    <i class=""></i>
+                <form>
+                    <i id="mapmarker" class="fas fa-map-marker-alt"></i>
                     <input type="text" placeholder="Your Country..">
                     <input type="text" placeholder="Your City..">
-                    <button><a href="#"><i class=""></i></a></button>
+                    <button id="searchbtn"><a href="#"><i id="search" class="fas fa-search"></i></a></button>
                 </form>
             </div>
         </div>
@@ -212,9 +213,9 @@
             </div>
             <div class="media-icons">
                 <h2>Follow Us</h2>
-                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i id="fb" class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i id="tw" class="fab fa-twitter fa-2x"></i></a>
+                <a href="#"><i id="in" class="fab fa-instagram fa-2x"></i></a>
             </div>
         </div>
     </footer>
