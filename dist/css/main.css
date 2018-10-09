@@ -1,4 +1,6 @@
 
+/****** INDEX.html ******/
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -636,10 +638,96 @@ footer {
     padding-bottom: 1rem;
 }
 
+/****** ABOUT.html ******/
+
+/****** ABOUT ******/
+
+#about {
+    padding: 3rem 20rem;
+    font-size: 18px;
+    background: url('../images/about-bg.jpg') no-repeat center center;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+#about .about-container-1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+#about .about-container-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+}
+
+#about .first-paragraph {
+    grid-column: 1/4;
+    
+}
+
+#about .second-paragraph {
+    grid-column: 2/4;
+}
+
+#about .third-paragraph {
+    grid-column: 1/3;
+}
+
+#about .fourth-paragraph {
+    grid-column: 1/4;
+}
+
+#about hr {
+    color: #1D1E2C;
+    width: 200px;
+    height: 3px;
+    background-color: #000;
+    border: none;
+    border-radius: 20px;
+}
+
+#about h1 {
+    font-family: 'Krub', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(43, 31, 97);
+    text-transform: uppercase;
+    padding: 2rem;
+}
+
+#about p {
+    font-family: "Krub", sans-serif;
+}
+
+#about h2 {
+    font-family: 'Krub', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(43, 31, 97);
+    text-transform: uppercase;
+}
+
+#about h4 {
+    font-family: 'Krub', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(43, 31, 97);
+}
+
+
+
 /****** MEDIA QUERIES ******/
 
 /* Extra small devices (portrait tablets, large phones and phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
+    /****** INDEX.html ******/
 
     body {
         text-align: center;
