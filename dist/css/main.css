@@ -96,9 +96,9 @@ nav ul li a:hover {
 }
 
 .showcase-container button:hover {
-    background: #1D1E2C;
-    border-color: #1D1E2C;
-    color: #594B98;
+    background: #ddd;
+    border-color: #ddd;
+    color: #1D1E2C;
     transition: ease .8s;
 }
 
