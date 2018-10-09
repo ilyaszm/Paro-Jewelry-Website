@@ -106,7 +106,7 @@ nav ul li a:hover {
 
 #highlights {
     padding: 12rem 0 12rem 0;
-    background: rgb(177, 53, 63);
+    background: #59656F;
 }
 
 #highlights h1#highlight-title {
@@ -364,7 +364,7 @@ nav ul li a:hover {
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 100%;
     width: auto;
     padding: 16px;
     margin-top: -22px;
