@@ -14,7 +14,7 @@ header {
 }
 
 .header-container {
-    height: 15vh;
+    height: 12vh;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
     justify-items: center;
@@ -558,7 +558,7 @@ nav ul li a:hover {
 
 /****** FOOTER ******/
 footer {
-    height: 200px;
+    height: 18vh;
     border-top: 2px solid #1D1E2C;
     background: rgb(33, 35, 56);
 }
@@ -568,7 +568,6 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
-    padding-top: 3rem;
 }
 
 .footer-container a {
@@ -668,7 +667,6 @@ footer {
 
 #about .first-paragraph {
     grid-column: 1/4;
-    
 }
 
 #about .second-paragraph {
@@ -703,6 +701,7 @@ footer {
 
 #about p {
     font-family: "Krub", sans-serif;
+    text-align: justify;
 }
 
 #about h2 {
@@ -718,6 +717,207 @@ footer {
     font-size: 20px;
     font-weight: bold;
     color: rgb(43, 31, 97);
+}
+
+/****** CONTACT.html ******/
+
+/****** CONTACT ******/
+#header {
+    background: #1D1E2C;
+    height: 25vh;
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    color: #ddd;
+}
+
+#header h1 {
+    font-family: "krub", sans-serif;
+    font-size: 30px;
+}
+
+#header p {
+    font-family: "krub", sans-serif;
+    font-size: 18px;
+}
+
+#contact {
+    padding: 3rem 20rem;
+    font-size: 22px;
+}
+
+#contact .contact-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+#contact i {
+    padding-right: .8rem;
+    color: #594B98;
+}
+
+#contact .form {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+#contact .form input {
+    width: 280px;
+    height: 60px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #AC9FBB;
+    font-size: 18px;
+}
+
+#contact .form textarea {
+    padding-top: 2rem;
+    width: 280px;
+    height: 150px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #AC9FBB;
+    font-size: 18px;
+}
+
+#contact .form button {
+    font-family: 'Krub', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    background: #594B98;
+    color: #fff;
+    text-transform: uppercase;
+    border: 3px solid #594B98;
+    border-radius: 3px;
+    width: 180px;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+/****** BOUTIQUES.html ******/
+
+/****** section ******/
+section {
+    padding: 5rem 0;
+}
+
+.section-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1.5fr;
+    justify-items: center;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-gap: 3rem;
+}
+
+#side-menu h1 {
+    font-family: 'Krub', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    background: #594B98;
+    color: #fff;
+    text-align: center;
+    border: 5px solid #594B98;
+    border-radius: 3px;
+    width: 160px;
+    margin-top: 2rem;
+}
+
+#side-menu h3 {
+    font-family: 'Lobster', sans-serif;
+    font-size: 22px;
+    font-weight: lighter;
+    color: #1D1E2C;
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+}
+
+#side-menu ul li {
+    list-style: none;
+}
+
+#side-menu ul li a {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #AC9FBB;
+}
+
+#content .card-header .price {
+    text-align: end;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #594B98;
+}
+
+#content .card-header img {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#content .card-header img:hover {
+    box-shadow: 0 0 2px 1px rgba(96, 0, 186, 0.5);
+}
+
+#content .card-body h1 {
+    font-family: 'Krub', sans-serif;
+    font-weight: bold;
+    color: #1D1E2C;
+}
+
+#content .card-body p {
+    font-family: 'Krub', sans-serif;
+    color: #1D1E2C;
+}
+
+#content .card-footer button {
+    font-family: 'Krub', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    background: #594B98;
+    color: #fff;
+    text-align: center;
+    border: 5px solid #594B98;
+    border-radius: 3px;
+    width: 160px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#content .card-footer button:hover {
+    background: rgb(51, 43, 87);
+    border: 5px solid rgb(51, 43, 87);
+    transition: .3s;
+}
+
+#box {
+    padding: 2rem;
+    font-size: 16px;
+    height: 50vh;
+    border: 2px solid #AC9FBB;
+    border-radius: 5px;
+}
+
+#box h2 {
+    font-family: 'Lato', sans-serif;
+    color: #1D1E2C;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+#box p {
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
 }
 
 
