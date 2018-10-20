@@ -564,7 +564,7 @@ nav ul li a:hover {
 }
 
 /****** FOOTER ******/
-footer {
+footer.pre-footer {
     width: 100%;
     border-top: 2px solid #1D1E2C;
     background: rgb(33, 35, 56);
