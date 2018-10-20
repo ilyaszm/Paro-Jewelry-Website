@@ -1,0 +1,1129 @@
+
+/****** INDEX.html ******/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/****** HEADER ******/
+header {
+    background-color: rgb(20, 20, 29);
+    width: 100%;
+    padding: .8rem 0;
+}
+
+.header-container {
+    height: 15vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.header-container h1 a {
+    font-family: 'Charmonman', cursive;
+    font-size: 30px;
+    color: #F7EBEC;
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 5px;
+    margin-bottom: 1rem;
+}
+
+nav ul li a {
+    font-family: 'K2D', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    color: #AC9FBB;
+    transition: ease .3s;
+}
+
+/****** SHOWCASE ******/
+
+#showcase {
+    background: url('../images/black-and-white-close-up-design-168927.jpg') no-repeat center center;
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+}
+
+.showcase-container .titles {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.showcase-container h1 {
+    font-family: 'Krub', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #ddd;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.showcase-container h5 {
+    font-family: 'Krub', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #bbb;
+    margin-bottom: 1.8rem;
+}
+
+.showcase-container button {
+    font-family: 'Krub', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    background: transparent;
+    color: #ddd;
+    text-transform: uppercase;
+    border: 3px solid #ddd;
+    border-radius: 3px;
+    padding: .6rem;
+    width: 180px;
+    cursor: pointer;
+}
+
+.showcase-container button:hover {
+    background: #ddd;
+    border-color: #ddd;
+    color: #1D1E2C;
+    transition: ease .8s;
+}
+
+/****** HIGHLIGHTS ******/
+
+#highlights {
+    padding: 8rem 0;
+    width: 100%;
+}
+
+#highlights h1#highlight-title {
+    font-family: 'Krub', sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    color: #1D1E2C;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.mySlides {
+    display: none;
+}
+
+.wrapper img {
+    vertical-align: middle;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.wrapper img:hover {
+    box-shadow: 0 0 2px 1px rgba(127, 0, 186, 0.678);
+    opacity: .8;
+}
+
+.wrapper .modal {
+    display: none;
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+/* the image */
+.wrapper .modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+/* Animation */
+.wrapper .modal-content {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+}
+
+.wrapper .close {
+    position: absolute;
+    top: 15px;
+    right: 50%;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wrapper .close-2 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-2:hover, .close-2:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wrapper .close-3 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-3:hover, .close-3:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wrapper .close-4 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-4:hover, .close-4:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wrapper h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: lighter;
+    color: #bbb;
+    margin-bottom: .8rem;
+    padding-top: 3rem;
+}
+
+.wrapper h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1D1E2C;
+    margin-bottom: 2rem;
+}
+
+/* Dropdowns Menu*/
+.wrapper .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.wrapper .dropbtn {
+    background: transparent;
+    border: none;
+    color: #1D1E2C;
+    padding: 10px 10px 10px 5px;
+    font-family: 'Krub', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.wrapper .drop-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.wrapper .drop-content a {
+    color: black;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+.wrapper .drop-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .drop-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background: transparent;
+}
+
+.wrapper #btnAdd {
+    font-family: 'Krub', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    background: transparent;
+    color: #1D1E2C;
+    text-transform: uppercase;
+    border: 3px solid #1D1E2C;
+    border-radius: 3px;
+    padding: .4rem;
+    margin-left: 3rem;
+    width: 120px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.wrapper #btnAdd:hover {
+    background: rgb(19, 12, 48);
+    color: rgb(153, 137, 226);
+}
+
+.wrapper p {
+    font-family: 'Krub', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1D1E2C;
+    padding: 2.2rem 0 1.8rem 0;
+}
+
+.wrapper a.link {
+    font-family: 'Krub', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1D1E2C;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 6rem;
+    cursor: pointer;
+}
+
+/* add some space */
+.wrapper span::before {
+    content: '';
+    display: inline-block;
+    width: 4rem;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 80%;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 100%;
+    width: auto;
+    padding: 8px;
+    margin-top: .5rem;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+
+/****** STORY ******/
+#story {
+    background: #1D1E2C;
+    width: 100%;
+}
+
+.story-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 1rem 1rem;
+    text-align: center;
+}
+
+.story-container h1 {
+    font-family: 'Krub', sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    color: #594B98;
+    text-transform: uppercase;
+}
+
+.story-container hr {
+    color: #59656F;
+    width: 100%;
+    margin: .5rem 0 2rem 0;
+}
+
+.story-container p {
+    font-family: 'Krub', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #717171;
+    margin-bottom: 1.8rem;
+}
+
+.story-container button {
+    font-family: 'Krub', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    background: #594B98;
+    color: #fff;
+    text-transform: uppercase;
+    border: 3px solid #594B98;
+    border-radius: 3px;
+    padding: .5rem;
+    margin-bottom: 2rem;
+    width: 170px;
+    cursor: pointer;
+}
+
+.story-container button:hover {
+    background: rgb(52, 44, 90);
+    border: 3px solid rgb(52, 44, 90);
+    transition: ease .3s;
+}
+
+.story-container img {
+    width: 280px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/****** STORE ******/
+#store {
+    width: 100%;
+}
+
+.store-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.store-container h1 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    color: #594B98;
+    text-transform: uppercase;
+}
+
+.store-container hr {
+    color: #000;
+    width: 80%;
+    margin: .5rem 0 3rem 0;
+}
+
+.store-container p {
+    font-family: 'Krub', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #717171;
+    margin-bottom: 1.8rem;
+    padding: 0 1rem;
+}
+
+.store-container form {
+    border: 1px solid #AC9FBB;
+    width: 100%;
+    padding: 20px;
+}
+
+.store-container input {
+    width: 140px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #AC9FBB;
+    font-size: 16px;
+}
+
+.store-container i#mapmarker {
+    color: #1D1E2C;
+    font-size: 20px;
+    margin-right: 3rem;
+    padding-right: 1rem;
+    border-right: 1px solid #AC9FBB;
+    cursor: pointer;
+}
+
+.store-container i#search {
+    color: #1D1E2C;
+}
+
+.store-container #searchbtn {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    margin-left: 3rem;
+    padding-left: 1rem;
+    border-left: 1px solid #AC9FBB;
+    cursor: pointer;
+}
+
+/****** FOOTER ******/
+footer {
+    width: 100%;
+    border-top: 2px solid #1D1E2C;
+    background: rgb(33, 35, 56);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+}
+
+.footer-container a {
+    text-decoration: none;
+}
+
+.footer-container h1 {
+    font-family: 'Charmonman', cursive;
+    font-size: 25px;
+    color: #AC9FBB;
+    margin-bottom: .5rem;
+}
+
+.footer-container .pages-1 {
+    margin-bottom: .5rem;
+}
+
+.footer-container .pages-1 ul li {
+    padding: 5px 0px;
+    list-style: none;
+}
+
+.footer-container .pages-1 ul li a {
+    font-family: "K2D", sans-serif;
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer-container .pages-2 {
+    margin-bottom: .5rem;
+}
+
+.footer-container .pages-2 ul li {
+    padding: 5px 0px;
+    list-style: none;
+}
+
+.footer-container .pages-2 ul li a {
+    font-family: "K2D", sans-serif;
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer-container .media-icons {
+    margin-bottom: .5rem;
+}
+
+.footer-container .media-icons a {
+    padding: 8px;
+}
+
+.footer-container i#fb {
+    color: #AC9FBB;
+    font-size: 25px;
+    padding-bottom: .3rem;
+    border-bottom: 2px solid rgb(7, 32, 255);
+    cursor: pointer;
+}
+
+.footer-container i#tw {
+    color: #AC9FBB;
+    font-size: 25px;
+    padding-bottom: .3rem;
+    border-bottom: 2px solid rgb(4, 84, 255);
+    cursor: pointer;
+}
+
+.footer-container i#in {
+    color: #AC9FBB;
+    font-size: 25px;
+    padding-bottom: .3rem;
+    border-bottom: 2px solid rgb(255, 7, 69);
+    cursor: pointer;
+}
+
+.footer-container h2 {
+    color: #AC9FBB;
+    font-family: "K2D", sans-serif;
+    font-size: 20px;
+    padding-bottom: .5rem;
+    padding-left: .5rem;
+}
+
+/****** ABOUT.html ******/
+/****** ABOUT ******/
+
+#about {
+    padding: 3rem 2rem;
+    font-size: 14px;
+    background: url('../images/about-bg.jpg') no-repeat center center;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    text-align: center;
+}
+
+#about .about-container-1 {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    justify-items: center;
+}
+
+#about .about-container-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+#about hr {
+    color: #1D1E2C;
+    width: 200px;
+    height: 3px;
+    background-color: #000;
+    border: none;
+    border-radius: 20px;
+}
+
+#about h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(43, 31, 97);
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+#about p {
+    font-family: "Krub", sans-serif;
+    text-align: justify;
+    margin: 2rem 0;
+}
+
+#about h2 {
+    font-family: 'Krub', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(43, 31, 97);
+    text-transform: uppercase;
+
+}
+
+#about h4 {
+    font-family: 'Krub', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(43, 31, 97);
+    margin-top: 1rem;
+}
+
+/****** BOUTIQUES.html ******/
+/****** section ******/
+section {
+    padding: 3rem 0;
+    width: 100%;
+}
+
+.section-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 1rem;
+}
+
+#side-menu h1 {
+    font-family: 'Krub', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    background: #594B98;
+    color: #fff;
+    text-align: center;
+    border: 5px solid #594B98;
+    border-radius: 3px;
+    width: 140px;
+    margin-top: 2rem;
+}
+
+#side-menu h3 {
+    font-family: 'Lobster', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #1D1E2C;
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+}
+
+#side-menu ul li {
+    list-style: none;
+}
+
+#side-menu ul li a {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #AC9FBB;
+}
+
+#content .card-header .price {
+    text-align: end;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #594B98;
+}
+
+#content .card-header img {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#content .card-header img:hover {
+    box-shadow: 0 0 2px 1px rgba(96, 0, 186, 0.5);
+}
+
+#content .card-body h1 {
+    font-family: 'Krub', sans-serif;
+    font-weight: bold;
+    color: #1D1E2C;
+    font-size: 18px;
+}
+
+#content .card-body p {
+    font-family: 'Krub', sans-serif;
+    color: #1D1E2C;
+    font-size: 14px;
+}
+
+#content .card-footer button {
+    font-family: 'Krub', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    background: #594B98;
+    color: #fff;
+    text-align: center;
+    border: 5px solid #594B98;
+    border-radius: 3px;
+    width: 130px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#content .card-footer button:hover {
+    background: rgb(51, 43, 87);
+    border: 5px solid rgb(51, 43, 87);
+    transition: .3s;
+}
+
+#box {
+    display: none;
+}
+/*#box {
+    padding: .5rem;
+    font-size: 14px;
+    height: 20%;
+    border: 2px solid #AC9FBB;
+    border-radius: 5px;
+}
+
+#box h2 {
+    font-family: 'Lato', sans-serif;
+    color: #1D1E2C;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+#box p {
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+}*/
+
+/****** CONTACT.html ******/
+/****** CONTACT ******/
+#header {
+    background: #1D1E2C;
+    width: 100%;
+    padding-top: 3rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    color: #ddd;
+    text-align: center;
+}
+
+#header h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+}
+
+#header p {
+    font-family: "krub", sans-serif;
+    font-size: 16px;
+}
+
+#contact {
+    padding: 2rem 0;
+    font-size: 20px;
+}
+
+#contact .contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 1rem;
+}
+
+#contact i {
+    padding-right: .8rem;
+    color: #594B98;
+}
+
+#contact .form {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+#contact .form input {
+    width: 280px;
+    height: 60px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #AC9FBB;
+    font-size: 18px;
+}
+
+#contact .form textarea {
+    padding-top: 2rem;
+    width: 280px;
+    height: 150px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #AC9FBB;
+    font-size: 16px;
+}
+
+#contact .form button {
+    font-family: 'Krub', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    background: #594B98;
+    color: #fff;
+    text-transform: uppercase;
+    border: 3px solid #594B98;
+    border-radius: 3px;
+    width: 120px;
+    padding: .5rem;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+
+/****** MEDIA QUERIES ******/
+
+@media (min-width: 600px) {
+
+    /* index */
+    nav ul li {
+        padding: .5rem 1.8rem;
+    }
+
+    .store-container hr {
+        width: 50%;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    /* index */
+
+
+    /* boutiques */
+
+
+    /* about */
+
+
+    /* contact */
+    
+}
+
+@media (min-width: 992px) {
+
+    /* index */
+    .header-container {
+        grid-template-columns: repeat(2, 1fr);
+        height: 8vh;
+    }
+
+    .header-container ul li {
+        padding-top: 1rem;
+    }
+    
+    .showcase-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .showcase-container .titles {
+        margin-top: 5rem;
+        text-align: inherit;
+        margin-left: 2.5rem;
+    }
+    
+    .showcase-container h1 {
+        font-size: 55px;
+    }
+
+    .story-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+    }
+
+    .story-container img {
+        width: 400px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* boutiques */
+    .section-container {
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+    
+    .content-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #content {
+        width: 100%;
+    }
+    
+    #content .card-header img {
+        width: 200px;
+    }
+    
+    #content .card-body h1 {
+        font-size: 16px;
+    }
+    
+    #box {
+        display: block;
+        padding: .5rem;
+        margin-right: 1rem;
+        font-size: 12px;
+        height: 20%;
+        border: 2px solid #AC9FBB;
+        border-radius: 5px;
+        width: 100%;
+    }
+    
+    #box h2 {
+        font-family: 'Lato', sans-serif;
+        color: #1D1E2C;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    
+    #box p {
+        font-family: 'Lato', sans-serif;
+        text-align: justify;
+    }
+
+    /* about */
+    #about .about-container-2 {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    
+    #about .first-paragraph {
+        grid-column: 1/4;
+    }
+    
+    #about .second-paragraph {
+        grid-column: 2/4;
+    }
+    
+    #about .third-paragraph {
+        grid-column: 1/3;
+    }
+    
+    #about .fourth-paragraph {
+        grid-column: 1/4;
+    }
+
+    #about .about-container-2 h2 {
+        font-size: 55px;
+    }
+
+    #about .about-container-2 h4 {
+        font-size: 30px;
+    }
+
+    /* contact */
+    
+}
+
+@media (min-width: 1200px) {
+
+    /* index */
+    .showcase-container {
+        height: 65vh;
+    }
+
+    .showcase-container .titles {
+        margin-top: 10rem;
+        margin-left: 3rem;
+    }
+    
+    .showcase-container h1 {
+        font-size: 80px;
+    }
+
+    .story-container img {
+        width: 500px;
+    }
+
+    /* boutiques */
+    
+    .content-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    #box {
+        height: 22%;
+    }
+
+    /* about */
+    #about .about-container-2 h2 {
+        font-size: 60px;
+    }
+
+    #about .about-container-2 h4 {
+        font-size: 35px;
+    }
+
+    /* contact */
+    
+
+}
