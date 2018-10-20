@@ -658,6 +658,13 @@ footer {
     padding-left: .5rem;
 }
 
+footer.main-footer {
+    padding: 3px 0;
+    text-align: center;
+    background: #252422;
+    color: #CCC5B9;
+}
+
 /****** ABOUT.html ******/
 /****** ABOUT ******/
 
