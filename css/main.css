@@ -564,7 +564,7 @@ nav ul li a:hover {
 }
 
 /****** FOOTER ******/
-footer {
+footer.pre-footer {
     width: 100%;
     border-top: 2px solid #1D1E2C;
     background: rgb(33, 35, 56);
@@ -656,6 +656,13 @@ footer {
     font-size: 20px;
     padding-bottom: .5rem;
     padding-left: .5rem;
+}
+
+footer.main-footer {
+    padding: 3px 0;
+    text-align: center;
+    background: #252422;
+    color: #CCC5B9;
 }
 
 /****** ABOUT.html ******/
